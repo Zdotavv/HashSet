@@ -1,9 +1,6 @@
-import java.util.Iterator;
 
-public interface MySet {
-    interface Entry {
-        String getKey();
-    }
+public interface MySet<E> {
+
     boolean myadd(String e) throws Exception; // Returns true if this set did not already contain the specified element
 
     void clear();
